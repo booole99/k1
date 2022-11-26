@@ -1,0 +1,26 @@
+.error{
+    width:200px;
+    padding:5px;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}
+.info{
+    width:200px;
+    padding:5px;
+    background-color: blue;
+    color:white;
+    font-weight: bold;
+}
+.success{
+    width:200px;
+    padding:5px;
+    background-color: green;
+    color:white;
+    font-weight: bold;
+}
+.sadrzaj{
+    border: 1px solid black;
+    padding: 5px;
+    width: 200px;
+}
