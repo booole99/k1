@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>window.alert("DobroDosli")</script>
+</head>
+
+<body>
+
+
+
+    <div style="border:1px solid black; font-weight: bold; width: 60%;" class="mis">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, rem assumenda totam
+        ipsum voluptates veniam consectetur corporis optio animi, blanditiis nostrum illum omnis
+        nobis fuga et ad voluptatibus culpa labore.
+        <button onclick="klikni()">Saglasan</button>
+        <button onclick="promeniOkvir()">T</button>
+        <button onclick="brDiv()">Br. Divova</button>
+    </div>
+    <div style="width: 60%;" class="test">
+        Magni doloribus nobis vitae animi, sequi nostrum facilis quas totam culpa. Nisi beatae
+        aspernatur enim fugit, fuga nulla eligendi quam. Fuga quo qui eos culpa consectetur
+        cumque corrupti architecto aut?
+        <button onclick="klikni()">Saglasan</button>
+        <button onclick="promeniOkvir()">T</button>
+        <button onclick="brDiv()">Br. Divova</button>
+    </div>
+    <div style="border:1px solid black; font-weight: bold; width: 60%;" class="mis">
+        In odit quis quisquam distinctio eum molestiae dignissimos. Dignissimos officia numquam
+        illo exercitationem, minima, tempora nulla non sunt qui dolorum optio cumque illum
+        necessitatibus eius ratione odio dolor soluta quia!
+        <button onclick="klikni()">Saglasan</button>
+        <button onclick="promeniOkvir()">T</button>
+        <button onclick="brDiv()">Br. Divova</button>
+    </div>
+    <div style="border:1px dotted red; background-color: red; color:white; width: 60%;" class="test46">
+        Fugit nihil expedita inventore placeat asperiores pariatur at autem dolorum aut
+        temporibus ea, veritatis quaerat ullam quae a nam tempore sunt voluptas corrupti debitis
+        aperiam officia hic eveniet. Quas, nisi?
+        <button onclick="klikni()">Saglasan</button>
+        <button onclick="promeniOkvir()">T</button>
+        <button onclick="brDiv()">Br. Divova</button>
+    </div>
+    <div style="width: 60%;" class="test">
+        Aspernatur neque aliquam, repellendus reprehenderit unde aliquid laborum cupiditate
+        facere eius sunt porro, non repudiandae cum nulla, deleniti expedita deserunt est
+        accusantium veniam blanditiis! Quos minus odit nihil ratione ipsa.
+        <button onclick="klikni()">Saglasan</button>
+        <button onclick="promeniOkvir()">T</button>
+        <button onclick="brDiv()">Br. Divova</button>
+    </div>
+    <div style="border:1px dotted red; background-color: red; color:white; width: 60%;" class="test46">
+        Reprehenderit placeat, sit ipsum ipsam architecto mollitia, facilis consectetur harum
+        omnis, suscipit distinctio. Iste sint praesentium autem ab iusto asperiores tenetur
+        dolores? Sit accusamus rem neque quae reiciendis asperiores nulla!
+        <button onclick="klikni()">Saglasan</button>
+        <button onclick="promeniOkvir()">T</button>
+        <button onclick="brDiv()">Br. Divova</button>
+    </div>
+</body>
+
+<script>
+
+    let test2 = document.querySelectorAll(".test")
+
+    for (let t of test2) {
+        t.addEventListener("mouseover", () => {
+            window.alert("pozdrav")
+        })
+    }
+    function klikni() {
+        if (confirm("Da li si siguran?") == true) {
+            let test = document.querySelectorAll(".test46")
+            for (let t of test) {
+                t.style = "";
+            }
+        }
+
+    }
+
+    function promeniOkvir() {
+        let test = document.querySelectorAll(".test")
+        for (let t of test) {
+            t.style = "border:2px solid red; background-color:black; color:white;";
+        }
+    }
+
+    function brDiv() {
+        let test11 = document.querySelectorAll("div")
+        alert(test11.length);
+    }
+
+
+    let misevi = document.querySelectorAll(".mis")
+    var slova = 20
+    for (let t of misevi) {
+        t.addEventListener("click", () => {
+            const fontSize = window.getComputedStyle(t).fontSize
+
+            t.style.fontSize = ++slova + "px";
+        })
+    }
+
+
+
+</script>
+
+</html>
